@@ -7,6 +7,7 @@ import select
 import sys
 import termios
 import tty
+import math
 
 import numpy as np
 import rclpy
@@ -41,7 +42,8 @@ def quaternion_from_euler(roll, pitch, yaw):
 class Teleop(Node):
     def __init__(self):
         super().__init__('champ_teleop')
-		
+		self.declare_parameter("joy", False)
+        self.use_joy = self.get_parameter("joy").value
         self.velocity_publisher = self.create_publisher(Twist, 'cmd_vel', 1)
         self.pose_lite_publisher = self.create_publisher(PoseLite, 'body_pose/raw', 1)
         self.pose_publisher = self.create_publisher(Pose, 'body_pose', 1)
@@ -122,6 +124,7 @@ CTRL-C to quit
         self.poll_keys()
 
     def joy_callback(self, data):
+        print("Joy callback received:", data)  # Debug print
         twist = Twist()
         twist.linear.x = data.axes[1] * self.speed
         twist.linear.y = data.buttons[4] * data.axes[0] * self.speed
@@ -130,7 +133,7 @@ CTRL-C to quit
         twist.angular.y = 0.0
         twist.angular.z = (not data.buttons[4]) * data.axes[0] * self.turn
         self.velocity_publisher.publish(twist)
-
+        print("Published twist:", twist) 
         body_pose_lite = PoseLite()
         body_pose_lite.x = 0
         body_pose_lite.y = 0
@@ -237,6 +240,21 @@ CTRL-C to quit
     def map(self, x, in_min, in_max, out_min, out_max):
         return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 
+def main(args=None):
+    rclpy.init(args=args)
+    try:
+        teleop = Teleop()
+        print("Teleop node initialized successfully")
+        if teleop.use_joy:
+            print("Running in joystick mode")
+            rclpy.spin(teleop)
+        else:
+            print("Running in keyboard mode")
+            teleop.poll_keys()
+    except Exception as e:
+        print(f"Error in teleop node: {str(e)}"
+    finally:
+        rclpy.shutdown()
+
 if __name__ == "__main__":
-    rclpy.init()
-    teleop = Teleop()
+    main()

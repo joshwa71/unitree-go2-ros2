@@ -1,0 +1,4 @@
+Invoking command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop -- -j32 -l32
+Invoked command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop -- -j32 -l32
+Invoking command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop
+Invoked command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop

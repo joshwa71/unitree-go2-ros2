@@ -1,0 +1,42 @@
+[0.006s] Invoking command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/unitree-go2-ros2/champ_teleop -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop
+[0.040s] -- The C compiler identification is GNU 11.4.0
+[0.073s] -- The CXX compiler identification is GNU 11.4.0
+[0.077s] -- Detecting C compiler ABI info
+[0.120s] -- Detecting C compiler ABI info - done
+[0.124s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.124s] -- Detecting C compile features
+[0.124s] -- Detecting C compile features - done
+[0.126s] -- Detecting CXX compiler ABI info
+[0.172s] -- Detecting CXX compiler ABI info - done
+[0.176s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.176s] -- Detecting CXX compile features
+[0.177s] -- Detecting CXX compile features - done
+[0.179s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.266s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.361s] -- Configuring done
+[0.363s] -- Generating done
+[0.364s] -- Build files have been written to: /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop
+[0.367s] Invoked command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/unitree-go2-ros2/champ_teleop -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop
+[0.368s] Invoking command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop -- -j32 -l32
+[0.393s] Invoked command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop -- -j32 -l32
+[0.399s] Invoking command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop
+[0.403s] -- Install configuration: ""
+[0.403s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/launch
+[0.403s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/launch/teleop.launch.py
+[0.403s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/lib/champ_teleop/champ_teleop.py
+[0.403s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/ament_index/resource_index/package_run_dependencies/champ_teleop
+[0.403s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/ament_index/resource_index/parent_prefix_path/champ_teleop
+[0.403s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/environment/ament_prefix_path.sh
+[0.403s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/environment/ament_prefix_path.dsv
+[0.404s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/environment/path.sh
+[0.404s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/environment/path.dsv
+[0.404s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/local_setup.bash
+[0.404s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/local_setup.sh
+[0.404s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/local_setup.zsh
+[0.404s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/local_setup.dsv
+[0.404s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/package.dsv
+[0.404s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/ament_index/resource_index/packages/champ_teleop
+[0.404s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/cmake/champ_teleopConfig.cmake
+[0.404s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/cmake/champ_teleopConfig-version.cmake
+[0.404s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/package.xml
+[0.406s] Invoked command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop

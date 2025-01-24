@@ -1,0 +1,36 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop
+-- Install configuration: ""
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/launch
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/launch/teleop.launch.py
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/lib/champ_teleop/champ_teleop.py
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/ament_index/resource_index/package_run_dependencies/champ_teleop
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/ament_index/resource_index/parent_prefix_path/champ_teleop
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/environment/ament_prefix_path.sh
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/environment/ament_prefix_path.dsv
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/environment/path.sh
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/environment/path.dsv
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/local_setup.bash
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/local_setup.sh
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/local_setup.zsh
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/local_setup.dsv
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/package.dsv
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/ament_index/resource_index/packages/champ_teleop
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/cmake/champ_teleopConfig.cmake
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/cmake/champ_teleopConfig-version.cmake
+-- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/package.xml

@@ -1,0 +1,32 @@
+[0.006s] Invoking command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/unitree-go2-ros2/champ_teleop -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop
+[0.039s] -- The C compiler identification is GNU 11.4.0
+[0.072s] -- The CXX compiler identification is GNU 11.4.0
+[0.076s] -- Detecting C compiler ABI info
+[0.118s] -- Detecting C compiler ABI info - done
+[0.122s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.122s] -- Detecting C compile features
+[0.122s] -- Detecting C compile features - done
+[0.124s] -- Detecting CXX compiler ABI info
+[0.174s] -- Detecting CXX compiler ABI info - done
+[0.178s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.178s] -- Detecting CXX compile features
+[0.178s] -- Detecting CXX compile features - done
+[0.181s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.267s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.364s] -- Configuring done
+[0.366s] -- Generating done
+[0.367s] -- Build files have been written to: /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop
+[0.370s] Invoked command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/unitree-go2-ros2/champ_teleop -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop
+[0.371s] Invoking command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop -- -j32 -l32
+[0.395s] Invoked command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop -- -j32 -l32
+[0.401s] Invoking command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop
+[0.405s] -- Install configuration: ""
+[0.406s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/launch
+[0.406s] -- Installing: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/launch/teleop.launch.py
+[0.406s] [31mCMake Error at cmake_install.cmake:50 (file):
+[0.406s]   file INSTALL cannot find
+[0.406s]   "/root/ros2_ws/unitree-go2-ros2/champ_teleop/champ_teleop.py": No such file
+[0.406s]   or directory.
+[0.406s] 
+[0.406s] [0m
+[0.407s] Invoked command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop

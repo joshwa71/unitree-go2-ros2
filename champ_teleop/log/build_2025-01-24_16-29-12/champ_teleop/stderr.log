@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:50 (file):
+  file INSTALL cannot find
+  "/root/ros2_ws/unitree-go2-ros2/champ_teleop/champ_teleop.py": No such file
+  or directory.
+
+[0m

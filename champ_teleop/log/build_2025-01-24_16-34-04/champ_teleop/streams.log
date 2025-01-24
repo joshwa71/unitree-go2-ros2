@@ -1,0 +1,23 @@
+[0.008s] Invoking command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop -- -j32 -l32
+[0.032s] Invoked command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop -- -j32 -l32
+[0.038s] Invoking command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop
+[0.042s] -- Install configuration: ""
+[0.042s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/launch
+[0.042s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/launch/teleop.launch.py
+[0.042s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/lib/champ_teleop/champ_teleop.py
+[0.042s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/ament_index/resource_index/package_run_dependencies/champ_teleop
+[0.042s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/ament_index/resource_index/parent_prefix_path/champ_teleop
+[0.042s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/environment/ament_prefix_path.sh
+[0.043s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/environment/ament_prefix_path.dsv
+[0.043s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/environment/path.sh
+[0.043s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/environment/path.dsv
+[0.043s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/local_setup.bash
+[0.043s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/local_setup.sh
+[0.043s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/local_setup.zsh
+[0.043s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/local_setup.dsv
+[0.043s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/package.dsv
+[0.043s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/ament_index/resource_index/packages/champ_teleop
+[0.043s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/cmake/champ_teleopConfig.cmake
+[0.043s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/cmake/champ_teleopConfig-version.cmake
+[0.043s] -- Up-to-date: /root/ros2_ws/unitree-go2-ros2/champ_teleop/install/champ_teleop/share/champ_teleop/package.xml
+[0.044s] Invoked command in '/root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/unitree-go2-ros2/champ_teleop/build/champ_teleop
