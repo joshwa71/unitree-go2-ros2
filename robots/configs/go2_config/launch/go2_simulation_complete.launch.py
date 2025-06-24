@@ -44,17 +44,6 @@ def generate_launch_description():
     default_world_path = os.path.join(config_pkg_share, "worlds/simple_environment.world")
     rviz_config_path = os.path.join(champ_description_share, "rviz/urdf_viewer.rviz")
 
-    # === FAST-LIO parameters ===
-    fastlio_pkg_path = get_package_share_directory('fast_lio')
-    default_fastlio_config_path = os.path.join(fastlio_pkg_path, 'config')
-    default_fastlio_rviz_config_path = os.path.join(
-        fastlio_pkg_path, 'rviz', 'fastlio.rviz')
-    
-    fastlio_config_path = LaunchConfiguration('fastlio_config_path')
-    fastlio_config_file = LaunchConfiguration('fastlio_config_file')
-    fastlio_rviz_use = LaunchConfiguration('fastlio_rviz')
-    fastlio_rviz_cfg = LaunchConfiguration('fastlio_rviz_cfg')
-    fastlio_delay = LaunchConfiguration('fastlio_delay')
 
     # Declare all launch arguments
     declare_use_sim_time = DeclareLaunchArgument(
@@ -63,7 +52,7 @@ def generate_launch_description():
         description="Use simulation (Gazebo) clock if true",
     )
     declare_rviz = DeclareLaunchArgument(
-        "rviz", default_value="true", description="Launch RViz for robot visualization"
+        "rviz", default_value="false", description="Launch RViz for robot visualization"
     )
     declare_robot_name = DeclareLaunchArgument(
         "robot_name", default_value="go2", description="Robot name"
@@ -84,33 +73,9 @@ def generate_launch_description():
     )
     declare_world_init_x = DeclareLaunchArgument("world_init_x", default_value="0.0")
     declare_world_init_y = DeclareLaunchArgument("world_init_y", default_value="-3.0")
-    declare_world_init_z = DeclareLaunchArgument("world_init_z", default_value="0.275")
-    declare_world_init_heading = DeclareLaunchArgument(
-        "world_init_heading", default_value="1.57"
-    )
-    
-    # FAST-LIO launch arguments
-    declare_fastlio_config_path = DeclareLaunchArgument(
-        'fastlio_config_path', default_value=default_fastlio_config_path,
-        description='FAST-LIO Yaml config file path'
-    )
-    declare_fastlio_config_file = DeclareLaunchArgument(
-        'fastlio_config_file', default_value='unitree_go2_mid360.yaml',
-        description='FAST-LIO Config file'
-    )
-    declare_fastlio_rviz = DeclareLaunchArgument(
-        'fastlio_rviz', default_value='false',
-        description='Use separate RViz for FAST-LIO (set to false to use main RViz)'
-    )
-    declare_fastlio_rviz_config_path = DeclareLaunchArgument(
-        'fastlio_rviz_cfg', default_value=default_fastlio_rviz_config_path,
-        description='FAST-LIO RViz config file path'
-    )
-    declare_fastlio_delay = DeclareLaunchArgument(
-        'fastlio_delay', default_value='5.0',
-        description='Delay in seconds before starting FAST-LIO (to ensure proper initialization)'
-    )
-
+    declare_world_init_z = DeclareLaunchArgument("world_init_z", default_value="0.4")
+    declare_world_init_heading = DeclareLaunchArgument("world_init_heading", default_value="0.0")
+ 
     # Define included launch files
     # CHAMP bringup
     bringup_ld = IncludeLaunchDescription(
@@ -160,44 +125,6 @@ def generate_launch_description():
             "close_loop_odom": "true",
         }.items(),
     )
-    
-    # Add a static transform publisher between livox and camera_init frames
-    static_transform_publisher = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='livox_to_camera_init_tf',
-        arguments=['0', '0', '0', '0', '0', '0', 'livox', 'camera_init']
-    )
-    
-    # FAST-LIO mapping (with delay)
-    fast_lio_node = Node(
-        package='fast_lio',
-        executable='fastlio_mapping',
-        parameters=[PathJoinSubstitution([fastlio_config_path, fastlio_config_file]),
-                    {'use_sim_time': use_sim_time}],
-        output='screen'
-    )
-    
-    # Delay the start of FAST-LIO to ensure simulation is properly initialized
-    delayed_fast_lio = TimerAction(
-        period=fastlio_delay,
-        actions=[fast_lio_node]
-    )
-    
-    # FAST-LIO RViz (optional, use a separate condition)
-    fastlio_rviz_node = Node(
-        package='rviz2',
-        executable='rviz2',
-        name='fastlio_rviz',
-        arguments=['-d', fastlio_rviz_cfg],
-        condition=IfCondition(fastlio_rviz_use)
-    )
-    
-    # Also delay the start of FAST-LIO RViz
-    delayed_fastlio_rviz = TimerAction(
-        period=fastlio_delay,
-        actions=[fastlio_rviz_node]
-    )
 
     return LaunchDescription(
         [
@@ -214,22 +141,15 @@ def generate_launch_description():
             declare_world_init_z,
             declare_world_init_heading,
             
-            # FAST-LIO parameters
-            declare_fastlio_config_path,
-            declare_fastlio_config_file,
-            declare_fastlio_rviz,
-            declare_fastlio_rviz_config_path,
-            declare_fastlio_delay,
-            
             # Launch files
             bringup_ld,
             gazebo_ld,
             
             # Static transforms needed for FAST-LIO
-            static_transform_publisher,
+            # static_transform_publisher,
             
-            # FAST-LIO nodes (with delay)
-            delayed_fast_lio,
-            delayed_fastlio_rviz,
+            # # FAST-LIO nodes (with delay)
+            # delayed_fast_lio,
+            # delayed_fastlio_rviz,
         ]
     ) 

@@ -28,6 +28,16 @@
         </visual>
     </link>
 
+    <!-- Add body link to connect odometry frame
+    <link name="body"/> -->
+
+    <!-- Fixed joint connecting body to base_link with zero offset -->
+    <!-- <joint name="body_to_base_link" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="body"/>
+        <child link="base_link"/>
+    </joint> -->
+
     <joint name="floating_base" type="fixed">
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <parent link="base_link"/>
