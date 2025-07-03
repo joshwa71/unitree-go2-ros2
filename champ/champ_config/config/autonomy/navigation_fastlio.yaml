@@ -10,8 +10,8 @@ bt_navigator:
     odom_topic: /Odometry      # Your odometry topic
     bt_loop_duration: 10
     default_server_timeout: 20
-    wait_for_service_timeout: 1000
-    action_server_result_timeout: 900.0
+    wait_for_service_timeout: 100
+    action_server_result_timeout: 90.0
     navigators: ["navigate_to_pose", "navigate_through_poses"]
     navigate_to_pose:
       plugin: "nav2_bt_navigator::NavigateToPoseNavigator"
@@ -112,7 +112,7 @@ controller_server:
       short_circuit_trajectory_evaluation: True
       stateful: True
       critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
-      BaseObstacle.scale: 0.02
+      BaseObstacle.scale: 5.0 # 0.02
       PathAlign.scale: 32.0
       PathAlign.forward_point_distance: 0.1
       GoalAlign.scale: 24.0
@@ -159,8 +159,8 @@ local_costmap:
           obstacle_range: 3.0
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 10.0  # From your tuned config
-        inflation_radius: 0.35
+        cost_scaling_factor: 1.0
+        inflation_radius: 0.5
       always_send_full_costmap: True
   local_costmap_client:
     ros__parameters:
@@ -203,8 +203,8 @@ global_costmap:
           obstacle_range: 4.5
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 10.0
-        inflation_radius: 0.35
+        cost_scaling_factor: 1.0
+        inflation_radius: 0.5
       always_send_full_costmap: True
   global_costmap_client:
     ros__parameters:
