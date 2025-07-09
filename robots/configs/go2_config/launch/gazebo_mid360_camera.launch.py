@@ -33,8 +33,8 @@ def generate_launch_description():
     )
     gait_config = os.path.join(config_pkg_share, "config/gait/gait.yaml")
     links_config = os.path.join(config_pkg_share, "config/links/links.yaml")
-    # Use the robot configuration with both LiDAR and camera
-    default_model_path = os.path.join(descr_pkg_share, "xacro/robot_mid360_camera.xacro")
+    # Use the robot configuration with both LiDAR and depth camera
+    default_model_path = os.path.join(descr_pkg_share, "xacro/robot_mid360_depth_camera.xacro")
     default_world_path = os.path.join(config_pkg_share, "worlds/simple_environment.world")
 
     declare_use_sim_time = DeclareLaunchArgument(

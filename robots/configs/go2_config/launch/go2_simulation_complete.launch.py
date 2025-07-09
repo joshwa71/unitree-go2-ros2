@@ -40,7 +40,7 @@ def generate_launch_description():
     )
     gait_config = os.path.join(config_pkg_share, "config/gait/gait.yaml")
     links_config = os.path.join(config_pkg_share, "config/links/links.yaml")
-    default_model_path = os.path.join(descr_pkg_share, "xacro/robot_mid360_camera.xacro")
+    default_model_path = os.path.join(descr_pkg_share, "xacro/robot_mid360_depth_camera.xacro")
     default_world_path = os.path.join(config_pkg_share, "worlds/simple_environment.world")
     rviz_config_path = os.path.join(champ_description_share, "rviz/urdf_viewer.rviz")
 
