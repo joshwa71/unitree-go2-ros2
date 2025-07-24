@@ -5,13 +5,35 @@ controller_manager:
 
     joint_states_controller:
       type: joint_state_broadcaster/JointStateBroadcaster
+      ros__parameters:
+        set_controller_parameters_on_load: true
+        log_level: DEBUG
+        joints:
+            - lf_hip_joint
+            - lf_upper_leg_joint
+            - lf_lower_leg_joint
+            - rf_hip_joint
+            - rf_upper_leg_joint
+            - rf_lower_leg_joint
+            - lh_hip_joint
+            - lh_upper_leg_joint
+            - lh_lower_leg_joint
+            - rh_hip_joint
+            - rh_upper_leg_joint
+            - rh_lower_leg_joint
 
     joint_group_effort_controller:
       type: joint_trajectory_controller/JointTrajectoryController
+      ros__parameters:
+        set_controller_parameters_on_load: true
+        log_level: DEBUG
 
 joint_group_effort_controller:
   ros__parameters:
+    set_controller_parameters_on_load: true
+    log_level: DEBUG
     use_sim_time: True
+    type: joint_trajectory_controller/JointTrajectoryController
     joints:
         - lf_hip_joint
         - lf_upper_leg_joint
@@ -30,6 +52,16 @@ joint_group_effort_controller:
     state_interfaces:
       - position
       - velocity
+
+    initial_joint_states:
+      # lf_hip, lf_upper_leg, lf_lower_leg
+      - 0.0, -0.8, 1.6
+      # rf_hip, rf_upper_leg, rf_lower_leg
+      - 0.0, -0.8, 1.6
+      # lh_hip, lh_upper_leg, lh_lower_leg
+      - 0.0, -0.8, 1.6
+      # rh_hip, rh_upper_leg, rh_lower_leg
+      - 0.0, -0.8, 1.6
     
     gains:
       lf_hip_joint        : {p: 100.0, i: 0.2, d: 1.0, i_clamp: 2.5, ff_velocity_scale: 1.0}

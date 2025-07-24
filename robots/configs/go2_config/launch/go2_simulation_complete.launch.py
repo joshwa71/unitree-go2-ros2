@@ -36,7 +36,7 @@ def generate_launch_description():
     # Paths to configurations
     joints_config = os.path.join(config_pkg_share, "config/joints/joints.yaml")
     ros_control_config = os.path.join(
-        config_pkg_share, "/config/ros_control/ros_control.yaml"
+        config_pkg_share, "config/ros_control/ros_control.yaml"
     )
     gait_config = os.path.join(config_pkg_share, "config/gait/gait.yaml")
     links_config = os.path.join(config_pkg_share, "config/links/links.yaml")
